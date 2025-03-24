@@ -82,16 +82,16 @@
     <h2>Entre em <span>Contato</span></h2>
     <form action="">
       <div class="input-box">
-        <input type="text" placeholder="Nome Completo" id="name" required >>
+        <input type="text" placeholder="Nome Completo" id="nome" required >
         <input type="email" placeholder="E-mail"   id="email" required >
         <!--reqired não deixa o cmpo vazio-->
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Telefone" id="phone" required>
+        <input type="number" placeholder="Telefone" id="telefone" required>
         <input type="text" placeholder="Assunto" id="assunto" required>
         
       </div>
-      <textarea cols="30" rows="8" placeholder="Mensagem"></textarea>
+      <textarea cols="30" rows="8" placeholder="Mensagem" id="mensagem"> </textarea>
       <a href="#" class="btn">Enviar Mensagem</a>
     </form>
   </section>
@@ -112,5 +112,6 @@
   </section>
 
   <script src="script.js"></script>
+  <script src="/Portfolio/api/send-email.js"></script>
 </body>
 </html>
