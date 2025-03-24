@@ -1,0 +1,49 @@
+/* google fonts popiline*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --main-color: #00eeff;
+  --text-color: #ffffff;
+  --bg-color-01: #1f242d;
+  --bg-color-02: #323946;
+  --color-00: #0000001a;
+
+  --color-01: #999999;
+  --color-02: #009539;
+  --color-03: #7950f2;
+  --color-04: #c00000;
+  --color-05: #232323;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  border: none;
+  outline: none;
+  scroll-behavior:smooth ;
+}
+
+html{
+  font-family:"Poppins", sans-serif ;
+  font-size: 16px;
+}
+body {
+  background-color: var(--bg-color-01);
+  color: var(--text-color);
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.1rem ;
+  background-color: var(--bg--color-01);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+  border: solid 1px var(--color-02);
+}
