@@ -39,7 +39,7 @@
         <a href="#"><i class='bx bxl-github'></i></a>
         <a href="#"><i class='bx bxl-instagram'></i></a>
       </div>
-      <a href="#" class="btn">Download CV</a>
+      <a href="/Portfolio/docs/Currículo_Redes_2025.pdf" class="btn">Download CV</a>
     </div>
     <div class="home-img">
       <img src="img/foto_pessoal.png" alt="Profile picture">
@@ -82,12 +82,14 @@
     <h2>Entre em <span>Contato</span></h2>
     <form action="">
       <div class="input-box">
-        <input type="text" placeholder="Nome Completo">
-        <input type="email" placeholder="E-mail">
+        <input type="text" placeholder="Nome Completo" id="name" required >>
+        <input type="email" placeholder="E-mail"   id="email" required >
+        <!--reqired não deixa o cmpo vazio-->
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Telefone">
-        <input type="text" placeholder="Assunto">
+        <input type="number" placeholder="Telefone" id="phone" required>
+        <input type="text" placeholder="Assunto" id="assunto" required>
+        
       </div>
       <textarea cols="30" rows="8" placeholder="Mensagem"></textarea>
       <a href="#" class="btn">Enviar Mensagem</a>
