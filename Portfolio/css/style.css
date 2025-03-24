@@ -88,10 +88,55 @@ span {
   align-items: center;
 }
 
+.home-img, .about-img {
+  position: relative;
+  padding: 0.6rem; /* Espaço para a moldura */
+  background: linear-gradient(135deg, var(--main-color), transparent 70%);
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1.5rem rgba(0, 238, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .home-img img, .about-img img {
   width: 100%;
   max-width: 300px;
   height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil na imagem */
+}
+
+/* Efeito de hover para destacar */
+.home-img:hover, .about-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 2rem var(--main-color);
+}
+
+/* Moldura específica para cada lado */
+.home-img::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  right: -0.6rem;
+  bottom: -0.6rem;
+  left: -0.6rem;
+  background: linear-gradient(135deg, transparent 50%, var(--main-color));
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.about-img::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  right: -0.6rem;
+  bottom: -0.6rem;
+  left: -0.6rem;
+  background: linear-gradient(225deg, transparent 50%, var(--main-color));
+  border-radius: 1rem;
+  z-index: 0;
 }
 
 .home-content, .about-content {
