@@ -215,6 +215,67 @@ span {
   text-align: justify;
 }
 
+/* Seção Habilidades */
+.skills {
+  background-color: var(--bg-color-01);
+  padding: 6rem 6rem 2rem;
+  text-align: center;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.skills-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.skill-item {
+  background: var(--bg-color-02);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+.skill-item i {
+  font-size: 4rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.skill-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .skills-row {
+    gap: 1.5rem;
+  }
+  
+  .skill-item {
+    width: 120px;
+    padding: 1.5rem;
+  }
+  
+  .skill-item i {
+    font-size: 3rem;
+  }
+}
+
 .portfolio {
   background-color: var(--bg-color-02);
 }
@@ -229,10 +290,13 @@ span {
   position: relative;
   border-radius: 0.6rem;
   overflow: hidden;
+  height: 300px; /* Altura fixa para todos */
 }
 
 .portfolio-box img {
   width: 100%;
+  height: 100%; 
+  object-fit: cover; 
   transition: 0.5s ease;
 }
 
