@@ -43,7 +43,7 @@
         <a href="#"><i class='bx bxl-github'></i></a>
         <a href="#"><i class='bx bxl-instagram'></i></a>
       </div>
-      <a href="/Portfolio/docs/Currículo_Redes_2025.pdf" class="btn">Download CV</a>
+      <a href="/Portfolio/docs/Currículo_Redes_2025.pdf" class="btn">Download CV</a>    
     </div>
     <div class="home-img">
       <img src="img/foto_pessoal.png" alt="Profile picture">
@@ -82,23 +82,21 @@
   </section>
 
     <!--  Contato -->
-  <section class="contact" id="contact">
+  <section>
     <h2>Entre em <span>Contato</span></h2>
-    <form action ="" id="contato">
-      <div class="input-box">
-        <input type="text" placeholder="Nome Completo" id="nome" required >
-        <input type="email" placeholder="E-mail"   id="email" required >
 
-
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Telefone" id="telefone" required>
-        <input type="text" placeholder="Assunto" id="assunto" required>
-        
-      </div>
-      <textarea cols="30" rows="8" placeholder="Mensagem" id="mensagem"> </textarea>
-      <a href="#" class="btn">Enviar Mensagem</a>
-    </form>
+<form id="contato">
+  <div class="input-box">
+    <input type="text" name="nome" id="name" placeholder="Nome Completo" required>
+    <input type="email" name="email" id="email" placeholder="E-mail" required>
+  </div>
+  <div class="input-box">
+    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+    <input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+  </div>
+  <textarea name="mensagem" id="message" cols="30" rows="8" placeholder="Mensagem" required></textarea>
+  <button type="submit" class="btn">Enviar Mensagem</button>
+</form>
   </section>
 
   <!-- Sobre Mim -->
@@ -117,6 +115,6 @@
   </section>
 
   <script src="script.js"></script>
-  <script src="/Portfolio/api/send-email.js"></script>
+  
 </body>
 </html>
