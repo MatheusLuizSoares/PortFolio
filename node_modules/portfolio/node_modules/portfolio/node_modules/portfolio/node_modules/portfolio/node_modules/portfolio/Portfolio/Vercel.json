@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "gitSubmodules": true
+  "gitSubmodules": true,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
 }
