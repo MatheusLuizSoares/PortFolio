@@ -6,8 +6,13 @@
   <!-- Box icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("wg87xgTS3Z9gv3RnZ"); // Cadastre-se em https://www.emailjs.com/
+</script>
   <title>Portfólio Matheus Luiz</title>
 </head>
+
 <body>
   <header>
     <a href="#" class="logo">Portfolio</a>
@@ -24,7 +29,6 @@
     </div>
   </header>
 
-  <!-- Home Section -->
   <section class="home" id="home">
     <div class="home-content">
       <h3>Bom dia, Eu Sou</h3>
@@ -46,7 +50,7 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- Portfolio -->
   <section class="portfolio" id="portfolio">
     <h2>Últimos <span>Projetos</span></h2>
     <div class="portfolio-container">
@@ -77,14 +81,15 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+    <!--  Contato -->
   <section class="contact" id="contact">
     <h2>Entre em <span>Contato</span></h2>
-    <form action="">
+    <form action ="" id="contato">
       <div class="input-box">
         <input type="text" placeholder="Nome Completo" id="nome" required >
         <input type="email" placeholder="E-mail"   id="email" required >
-        <!--reqired não deixa o cmpo vazio-->
+
+
       </div>
       <div class="input-box">
         <input type="number" placeholder="Telefone" id="telefone" required>
@@ -96,7 +101,7 @@
     </form>
   </section>
 
-  <!-- About Section -->
+  <!-- Sobre Mim -->
   <section class="about" id="about">
     <div class="about-img">
       <img src="img/foto_espelho.jpg" alt="Sobre Mim">
