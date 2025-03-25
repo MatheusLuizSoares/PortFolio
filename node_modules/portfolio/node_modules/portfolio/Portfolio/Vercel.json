@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ]
-}
+  "gitSubmodules": true,
+  
+    
+    "routes": [
+      {
+        "src": "/docs/(.*)",
+        "headers": {
+          "Cache-Control": "public, max-age=3600",
+          "Content-Disposition": "attachment"
+        },
+        "continue": true
+      }
+    ]
+  }
