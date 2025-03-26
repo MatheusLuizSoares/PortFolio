@@ -1,1 +1,3 @@
 .vercel
+# Ignorar dependências do projeto
+node_modules/
