@@ -306,6 +306,15 @@ span {
   transition: 0.5s ease;
 }
 
+.UP{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  position: relative; /* Para o pseudo-elemento */
+  padding-top: 2rem; /* Espaço acima do título */
+  padding-bottom: 2rem;
+}
+
 .portfolio-box:hover img {
   transform: scale(1.1);
 }
