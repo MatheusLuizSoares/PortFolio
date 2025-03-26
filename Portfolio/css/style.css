@@ -84,6 +84,7 @@ header {
   text-shadow: 0 0 10px rgba(110, 84, 148, 0.7);
 }
 
+
 /* Aumentando o tamanho do logo principal */
 .logo {
   font-size: 2rem; /* Aumentei de 1.7rem para 2rem */
@@ -151,6 +152,7 @@ span {
   border-radius: 0.8rem;
   box-shadow: 0 0 1.5rem rgba(0, 238, 255, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
+  
 }
 
 .home-img img, .about-img img {
@@ -197,6 +199,7 @@ span {
 
 .home-content, .about-content {
   width: 45%;
+  
 }
 
 .home-content h1, .about-content h1 {
@@ -484,6 +487,63 @@ form textarea {
 }
 
 /* Responsividade */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 8rem 2rem 4rem; /* Ajuste no padding para mobile */
+    text-align: center;
+  }
+
+  .home-content {
+    width: 100%;
+    order: 2; /* Coloca o conteúdo abaixo da imagem */
+    margin-top: 2rem;
+  }
+
+  .home-img {
+    width: 80%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0.3rem; /* Reduz o padding no mobile */
+    order: 1; /* Coloca a imagem acima do conteúdo */
+  }
+
+  .home-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .home-img::before {
+    top: -0.3rem;
+    right: -0.3rem;
+    bottom: -0.3rem;
+    left: -0.3rem; /* Reduz o efeito de moldura no mobile */
+  }
+}
+
+.home-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
+@media (max-width: 480px) {
+  .home-img {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-img img {
+    max-height: 250px; /* Limita a altura em telas muito pequenas */
+  }
+}
 @media (max-width: 768px) {
   .contact-methods {
     flex-direction: column;
