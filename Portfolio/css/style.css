@@ -539,6 +539,11 @@ form textarea {
   }
 
   .home-img img, .about-img img {
-    max-width: 80%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto
   }
+  
 }
