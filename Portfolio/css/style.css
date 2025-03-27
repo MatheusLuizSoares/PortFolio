@@ -536,6 +536,8 @@ form textarea {
     display: block;
   }
 
+
+
   .nav {
     display: none;
   }
@@ -547,6 +549,11 @@ form textarea {
 
   .home-content, .about-content {
     width: 100%;
+
+  }
+  .home-img, .about-img{
+    width: 65%;
+    max-width: 65%;
   }
 
   .home-img img, .about-img img {
@@ -564,7 +571,17 @@ form textarea {
   html {
     font-size: 50%;
   }
+ 
+  p{
+    margin: 0.5rem 0; /* Reduz o espaçamento vertical */
+    line-height: 1.5; /* Altura de linha mais compacta */
+    text-align: left; /* Alinhamento à esquerda */
+    padding: 0; /* Remove qualquer padding */
+    font-size: 1.4rem; /* Tamanho de fonte padrão */
+    max-width: 100%; /* Ocupa toda a largura disponível */
+  }
   
+  }
   .home-content h1 {
     font-size: 3.5rem;
   }
@@ -572,4 +589,3 @@ form textarea {
   .home-content h3 {
     font-size: 2rem;
   }
-}
