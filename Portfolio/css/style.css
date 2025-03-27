@@ -99,37 +99,90 @@ header {
 }
 
 
-.nav a:hover {
-  color: var(--main-color);
-  text-shadow: 0 0 5px var(--main-color);
-}
-
-
-
-.nav a {
-  font-size: 1.2rem;
-  color: var(--text-color);
-  padding: 0.5rem 1rem;
-  transition: 0.4s;
-}
-
-.nav a:hover {
-  color: var(--main-color);
-}
-
 .menu-hamburguer {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
   cursor: pointer;
+  z-index: 1001;
+  padding: 5px;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 2rem;
-  height: 0.3rem;
+.menu-hamburguer div {
+  width: 100%;
+  height: 3px;
   background-color: var(--text-color);
-  margin: 0.4rem 0;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+.nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: var(--bg-color-02);
+  flex-direction: column;
+  padding: 80px 20px 20px;
+  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav.active {
+  right: 0;
+  display: flex;
+}
+
+.nav a {
+  display: block;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.nav a:hover {
+  color: var(--main-color);
+  padding-left: 25px;
+  border-left: 3px solid var(--main-color);
+}
+
+/* Animação do ícone */
+.menu-hamburguer.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-hamburguer.active .bar2 {
+  opacity: 0;
+}
+
+.menu-hamburguer.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
 section {
   min-height: 100vh;
   padding: 6rem 6rem 2rem;
@@ -533,7 +586,7 @@ form textarea {
 /* Responsividade */
 @media (max-width: 768px) {
   .menu-hamburguer {
-    display: block;
+    display: flex;
   }
 
 
