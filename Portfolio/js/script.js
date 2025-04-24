@@ -20,3 +20,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Funções para expandir os projetos
+document.querySelectorAll('.btn-details').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const expanded = this.closest('.portfolio-box').querySelector('.portfolio-expanded');
+    expanded.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Fechar a janela expandida
+document.querySelectorAll('.close-expanded').forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.closest('.portfolio-expanded').classList.remove('active');
+    document.body.style.overflow = '';
+  });
+});
+
+// Fechar ao clicar fora do conteúdo
+document.querySelectorAll('.portfolio-expanded').forEach(modal => {
+  modal.addEventListener('click', function(e) {
+    if (e.target === this) {
+      this.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+});
