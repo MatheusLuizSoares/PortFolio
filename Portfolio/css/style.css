@@ -22,6 +22,28 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+/* Botão de alternar tema (canto superior direito) */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--bg-color-02);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; /* fica por cima de tudo */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--main-color);
+}
+
+#theme-icon {
+  font-size: 24px;
+  color: var(--text-color);
+}
 
 
 * {
