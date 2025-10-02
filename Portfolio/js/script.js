@@ -70,3 +70,17 @@ themeToggle.addEventListener("click", () => {
     localStorage.setItem("theme", "dark");
   }
 });
+// Botão "Leia Mais Sobre Mim"
+const btnAbout = document.getElementById("btn-about");
+const moreAbout = document.querySelector(".more-about");
+
+btnAbout.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (moreAbout.style.display === "none") {
+    moreAbout.style.display = "block";
+    btnAbout.textContent = "Mostrar Menos";
+  } else {
+    moreAbout.style.display = "none";
+    btnAbout.textContent = "Leia Mais Sobre Mim";
+  }
+});
