@@ -48,3 +48,25 @@ document.querySelectorAll('.portfolio-expanded').forEach(modal => {
     }
   });
 });
+
+
+const themeToggle = document.querySelector(".theme-toggle");
+const themeIcon = document.querySelector("#theme-icon");
+
+// Verifica se já existe preferência salva
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-mode");
+  themeIcon.classList.replace("bx-moon", "bx-sun");
+}
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+
+  if (document.body.classList.contains("light-mode")) {
+    themeIcon.classList.replace("bx-moon", "bx-sun");
+    localStorage.setItem("theme", "light");
+  } else {
+    themeIcon.classList.replace("bx-sun", "bx-moon");
+    localStorage.setItem("theme", "dark");
+  }
+});

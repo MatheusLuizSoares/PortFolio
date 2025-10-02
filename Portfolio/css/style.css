@@ -9,6 +9,21 @@
   --secondary-color: #ff6bff;
 }
 
+/* Modo claro */
+body.light-mode {
+  --main-color: #0077ff;      /* Azul mais "limpo" */
+  --text-color: #1f242d;      /* Texto escuro */
+  --bg-color-01: #ffffff;     /* Fundo claro */
+  --bg-color-02: #f0f0f0;     /* Secundário */
+  --secondary-color: #ff4081; /* Rosa vibrante */
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
