@@ -1,105 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-:root {
-  --main-color: #1f3a5f;
-  --bg-01: #0f172a;
-  --bg-02: #1e293b;
-  --text-color: #e5e7eb;
-}
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfólio | Matheus Luiz - Redes & Infraestrutura</title>
+</head>
 
-body {
-  background: var(--bg-01);
-  color: var(--text-color);
-}
+<body>
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: var(--bg-01);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  z-index: 100;
-}
+<header>
+  <a href="#" class="logo">Matheus Luiz</a>
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-color);
-}
+  <nav class="nav">
+    <a href="#home">Início</a>
+    <a href="#portfolio">Projetos</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#contact">Contato</a>
+    <a href="#about">Sobre</a>
+  </nav>
 
-.nav a {
-  margin-left: 1.5rem;
-  color: var(--text-color);
-  text-decoration: none;
-}
+  <div class="menu-hamburguer">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
 
-section {
-  padding: 6rem 2rem;
-  text-align: center;
-}
+<!-- HOME -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h3>Olá, eu sou</h3>
+    <h1><span>Matheus Luiz</span></h1>
+    <h3>Estudante de <span>Redes de Computadores</span></h3>
 
-.home {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    <p>
+      Estudante de Redes de Computadores com foco em suporte técnico,
+      infraestrutura e monitoramento de ambientes de TI. Possuo conhecimentos
+      em Linux, redes, Docker e ferramentas de observabilidade como Grafana e
+      Zabbix. Busco oportunidade de estágio para atuar na área de infraestrutura
+      e suporte técnico.
+    </p>
 
-.home-img img {
-  width: 280px;
-  border-radius: 10px;
-  border: 3px solid var(--main-color);
-}
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/matheus-luiz-soares-7386b5269/" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/MatheusLuizSoares" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+    </div>
 
-.btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.7rem 2rem;
-  background: var(--main-color);
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-}
+    <a href="docs/Curriculo_matheus_luiz_20.pdf" class="btn">Download CV</a>
+  </div>
 
-.skills-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
+  <div class="home-img">
+    <img src="img/matheus_camisa_verde.jpg" alt="Foto profissional">
+  </div>
+</section>
 
-.skill-item {
-  background: var(--bg-02);
-  padding: 1.5rem;
-  border-radius: 10px;
-  width: 160px;
-}
+<!-- PROJETOS -->
+<section class="portfolio" id="portfolio">
+  <h2>Projetos <span>Acadêmicos</span></h2>
 
-.skill-item i {
-  font-size: 3rem;
-  color: var(--main-color);
-}
+  <div class="portfolio-container">
+    <div class="portfolio-box">
+      <img src="img/Flaflix.jpg" alt="Projeto Web">
 
-.contact-methods {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
+      <div class="portfolio-layer">
+        <h4>Sistema Web</h4>
+        <p>Backend, autenticação e banco de dados</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-.contact-btn {
-  padding: 1rem 1.5rem;
-  background: var(--bg-02);
-  border-radius: 30px;
-  color: white;
-  text-decoration: none;
-}
+<!-- HABILIDADES -->
+<section class="skills" id="skills">
+  <h2>Habilidades <span>Técnicas</span></h2>
+
+  <div class="skills-container">
+    <div class="skill-item">
+      <i class="devicon-linux-plain"></i>
+      <h3>Linux</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class='bx bx-network-chart'></i>
+      <h3>Redes</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-docker-plain"></i>
+      <h3>Docker</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class='bx bx-line-chart'></i>
+      <h3>Grafana</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class='bx bx-shield-quarter'></i>
+      <h3>Zabbix</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class='bx bx-support'></i>
+      <h3>Suporte Técnico</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class='bx bx-server'></i>
+      <h3>Infraestrutura</h3>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact" id="contact">
+  <h2>Entre em <span>Contato</span></h2>
+
+  <div class="contact-methods">
+    <a href="mailto:matheusluiz15a@gmail.com" class="contact-btn email">
+      <i class='bx bx-envelope'></i> E-mail
+    </a>
+
+    <a href="https://wa.me/558488109755" class="contact-btn whatsapp">
+      <i class='bx bxl-whatsapp'></i> WhatsApp
+    </a>
+
+    <a href="https://www.linkedin.com/in/matheus-luiz-soares-7386b5269/" class="contact-btn linkedin">
+      <i class='bx bxl-linkedin'></i> LinkedIn
+    </a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="about" id="about">
+  <h2>Sobre <span>Mim</span></h2>
+
+  <p>
+    Sou estudante de Redes de Computadores pelo IFRN, com interesse em atuar nas
+    áreas de suporte técnico, infraestrutura e redes. Possuo perfil proativo,
+    facilidade de aprendizado e foco em ambientes corporativos de TI.
+  </p>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
