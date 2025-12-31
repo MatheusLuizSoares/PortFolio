@@ -4,263 +4,214 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Box icons -->
+  <!-- Ícones -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Portfólio | Matheus Luiz - Redes & Infraestrutura</title>
+  <title>Portfólio | Matheus Luiz</title>
 </head>
 
 <body>
 
-  <!-- Toggle Tema -->
-  <div class="theme-toggle">
-    <i class='bx bx-moon' id="theme-icon"></i>
+<!-- ================= TEMA ================= -->
+<div class="theme-toggle">
+  <i class='bx bx-moon' id="theme-icon"></i>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <a href="#" class="logo">Matheus Luiz</a>
+
+  <nav class="nav">
+    <a href="#home">Início</a>
+    <a href="#portfolio">Projetos</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#contact">Contato</a>
+    <a href="#about">Sobre</a>
+  </nav>
+
+  <div class="menu-hamburguer">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h3>Olá, eu sou</h3>
+    <h1><span>Matheus Luiz</span></h1>
+    <h3>Estudante de <span>Redes de Computadores</span></h3>
+
+    <p class="pp">
+      Estudante de Redes de Computadores com foco em suporte técnico,
+      infraestrutura e operação de ambientes de TI. Possuo interesse em atuar
+      diretamente no atendimento a usuários, administração básica de sistemas,
+      monitoramento e redes corporativas.
+    </p>
+
+    <p class="pp">
+      Tenho experiência acadêmica com Linux, Docker, redes de computadores,
+      desenvolvimento web e ferramentas de monitoramento. Busco constantemente
+      evoluir tecnicamente, aplicando boas práticas e aprendendo com projetos reais.
+    </p>
+
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/matheus-luiz-soares-7386b5269/" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/MatheusLuizSoares" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+    </div>
+
+    <a href="docs/Curriculo_matheus_luiz_20.pdf" class="btn">Download CV</a>
   </div>
 
-  <!-- HEADER -->
-  <header>
-    <a href="#" class="logo">Matheus Luiz</a>
+  <div class="home-img">
+    <img src="img/matheus_camisa_verde.jpg" alt="Matheus Luiz">
+  </div>
+</section>
 
-    <div class="nav">
-      <a href="#home">Início</a>
-      <a href="#portfolio">Projetos</a>
-      <a href="#skills">Habilidades</a>
-      <a href="#contact">Contato</a>
-      <a href="#about">Sobre</a>
-    </div>
+<!-- ================= PORTFÓLIO ================= -->
+<section class="portfolio" id="portfolio">
+  <h2 class="UP">Projetos <span>Acadêmicos</span></h2>
 
-    <div class="menu-hamburguer">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-  </header>
+  <div class="portfolio-container">
 
-  <!-- HOME -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Olá, eu sou</h3>
-      <h1><span>Matheus Luiz</span></h1>
-      <h3>Estudante de <span>Redes de Computadores</span></h3>
+    <!-- PROJETO 1 -->
+    <div class="portfolio-box">
+      <img src="img/Flaflix.jpg" alt="Sistema Web Flask">
 
-      <p class="pp">
-        Sou estudante de Redes de Computadores com foco em suporte técnico,
-        infraestrutura e operação de ambientes de TI. Possuo interesse em atuar
-        diretamente no suporte a usuários, monitoramento de serviços,
-        administração básica de sistemas e redes corporativas.
-      </p>
-
-      <p class="pp">
-        Tenho experiência acadêmica e prática com sistemas Linux, noções de
-        redes de computadores, containers Docker e ferramentas de monitoramento.
-        Busco constantemente aprimorar meus conhecimentos técnicos, seguindo
-        boas práticas e padrões utilizados em ambientes profissionais.
-      </p>
-
-      <p class="pp">
-        Procuro uma oportunidade de estágio onde eu possa aplicar meus
-        conhecimentos, aprender com ambientes reais de produção e evoluir
-        profissionalmente na área de infraestrutura, redes ou suporte técnico.
-      </p>
-
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/matheus-luiz-soares-7386b5269/" target="_blank">
-          <i class='bx bxl-linkedin'></i>
-        </a>
-        <a href="https://github.com/MatheusLuizSoares" target="_blank">
-          <i class='bx bxl-github'></i>
-        </a>
+      <div class="portfolio-layer">
+        <h4>Sistema Web</h4>
+        <p>Backend, autenticação e banco de dados</p>
+        <button class="btn-details">Ver Detalhes</button>
       </div>
 
-      <a href="docs/Curriculo_matheus_luiz_20.pdf" class="btn">Download CV</a>
-    </div>
+      <!-- EXPANDIDO -->
+      <div class="portfolio-expanded">
+        <button class="close-expanded">✖</button>
 
-    <div class="home-img">
-      <img src="img/matheus_camisa_verde.jpg" alt="Foto profissional de Matheus Luiz">
-    </div>
-  </section>
+        <div class="expanded-content">
 
-  <!-- PORTFÓLIO -->
-  <section class="portfolio" id="portfolio">
-    <h2 class="UP">Projetos <span>Acadêmicos</span></h2>
-
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="img/Flaflix.jpg" alt="Projeto Sistema Web">
-
-        <div class="portfolio-layer">
-          <h4>Sistema Web</h4>
-          <p>Backend, autenticação e banco de dados</p>
-          <button class="btn-details">Ver Detalhes</button>
-        </div>
-
-        <!-- Conteúdo expandido -->
-        <div class="portfolio-expanded">
-          <button class="close-expanded">✖</button>
-
-          <div class="expanded-content">
-            <div class="expanded-video">
-              <iframe src="https://www.youtube.com/embed/UaMN4vdGI6M" allowfullscreen></iframe>
-            </div>
-
-            <div class="expanded-info">
-              <h3>Sistema de Gerenciamento Web</h3>
-
-              <p>
-                Projeto acadêmico desenvolvido com foco em backend, organização
-                de serviços e persistência de dados. O sistema possui controle
-                de usuários, autenticação, CRUD completo e integração com banco
-                de dados relacional.
-              </p>
-
-              <p>
-                O projeto demonstra conhecimentos em lógica de programação,
-                organização de rotas, separação de responsabilidades e boas
-                práticas de desenvolvimento, além de noções de infraestrutura
-                para execução e manutenção do sistema.
-              </p>
-
-              <ul>
-                <li><strong>Linguagem:</strong> Python</li>
-                <li><strong>Framework:</strong> Flask</li>
-                <li><strong>Banco de Dados:</strong> MySQL</li>
-              </ul>
-
-              <span>Projeto acadêmico — Julho/2023</span>
-            </div>
+          <!-- Preview estilo YouTube -->
+          <div class="expanded-video">
+            <a href="https://www.linkedin.com/posts/matheus-luiz-soares-7386b5269_devops-docker-linux-activity-7398450281073684480-3VnA/"
+               target="_blank" class="play-btn">
+              <img src="img/devops-linkedin-thumb.jpg" alt="Vídeo do projeto no LinkedIn">
+              <i class='bx bx-play-circle'></i>
+            </a>
           </div>
 
-          <div class="expanded-links">
-            <a href="https://youtu.be/UaMN4vdGI6M" target="_blank">Ver Demonstração</a>
-            <a href="https://github.com/MatheusLuizSoares/locadora" target="_blank">Repositório</a>
+          <div class="expanded-info">
+            <h3>Sistema de Gerenciamento Web</h3>
+
+            <p>
+              Projeto acadêmico desenvolvido utilizando Python e Flask, com foco
+              em organização de backend, autenticação de usuários e persistência
+              de dados em banco relacional.
+            </p>
+
+            <p>
+              A aplicação segue boas práticas de desenvolvimento, separação de
+              responsabilidades e possui integração com infraestrutura Linux e Docker.
+              O projeto também demonstra conhecimentos em versionamento com Git.
+            </p>
+
+            <ul>
+              <li><strong>Linguagem:</strong> Python</li>
+              <li><strong>Framework:</strong> Flask</li>
+              <li><strong>Banco de Dados:</strong> MySQL</li>
+              <li><strong>Infraestrutura:</strong> Linux e Docker</li>
+            </ul>
+
+            <span>Projeto acadêmico — 2023</span>
           </div>
-          <div class="expanded-links">
-  <a href="https://www.linkedin.com/posts/matheus-luiz-soares-7386b5269_devops-docker-linux-activity-7398450281073684480-3VnA/"
-     target="_blank" class="btn">
-     ▶ Assistir vídeo no LinkedIn
-  </a>
-
-  <a href="https://github.com/MatheusLuizSoares" target="_blank" class="btn">
-     Código no GitHub
-  </a>
-          </div>
-
         </div>
+
+        <div class="expanded-links">
+          <a href="https://www.linkedin.com/posts/matheus-luiz-soares-7386b5269_devops-docker-linux-activity-7398450281073684480-3VnA/"
+             target="_blank" class="btn">
+            ▶ Assistir no LinkedIn
+          </a>
+
+          <a href="https://github.com/MatheusLuizSoares/locadora"
+             target="_blank" class="btn">
+            Código no GitHub
+          </a>
+        </div>
+
       </div>
     </div>
-  </section>
 
-  <!-- HABILIDADES -->
-  <section class="skills" id="skills">
-    <h2>Habilidades <span>Técnicas</span></h2>
+  </div>
+</section>
 
-    <div class="skills-container">
+<!-- ================= HABILIDADES ================= -->
+<section class="skills" id="skills">
+  <h2>Habilidades <span>Técnicas</span></h2>
 
-      <div class="skills-row">
-        <div class="skill-item">
-          <i class="devicon-linux-plain"></i>
-          <h3>Linux</h3>
-        </div>
-
-        <div class="skill-item">
-          <i class='bx bx-network-chart'></i>
-          <h3>Redes</h3>
-        </div>
-
-        <div class="skill-item">
-          <i class='bx bxl-docker'></i>
-          <h3>Docker</h3>
-        </div>
-
-        <div class="skill-item">
-          <i class='bx bx-line-chart'></i>
-          <h3>Grafana</h3>
-        </div>
-      </div>
-
-      <div class="skills-row">
-        <div class="skill-item">
-          <i class='bx bx-shield-quarter'></i>
-          <h3>Zabbix</h3>
-        </div>
-
-        <div class="skill-item">
-          <i class='bx bx-support'></i>
-          <h3>Suporte Técnico</h3>
-        </div>
-
-        <div class="skill-item">
-          <i class='bx bx-server'></i>
-          <h3>Infraestrutura</h3>
-        </div>
-      </div>
-
+  <div class="skills-container">
+    <div class="skills-row">
+      <div class="skill-item"><i class="devicon-linux-plain"></i><h3>Linux</h3></div>
+      <div class="skill-item"><i class='bx bx-network-chart'></i><h3>Redes</h3></div>
+      <div class="skill-item"><i class='bx bxl-docker'></i><h3>Docker</h3></div>
+      <div class="skill-item"><i class='bx bx-line-chart'></i><h3>Grafana</h3></div>
     </div>
-  </section>
 
-  <!-- CONTATO -->
-  <section class="contact" id="contact">
-    <h2>Entre em <span>Contato</span></h2>
-
-    <div class="contact-methods">
-      <a href="mailto:matheusluiz15a@gmail.com" class="contact-btn email-btn">
-        <i class='bx bx-envelope'></i>
-        <span>E-mail</span>
-      </a>
-
-      <a href="https://wa.me/558488109755" class="contact-btn whatsapp-btn">
-        <i class='bx bxl-whatsapp'></i>
-        <span>WhatsApp</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/matheus-luiz-soares-7386b5269/" class="contact-btn linkedin-btn">
-        <i class='bx bxl-linkedin'></i>
-        <span>LinkedIn</span>
-      </a>
-
-      <a href="https://github.com/MatheusLuizSoares" class="contact-btn github-btn">
-        <i class='bx bxl-github'></i>
-        <span>GitHub</span>
-      </a>
+    <div class="skills-row">
+      <div class="skill-item"><i class='bx bx-shield-quarter'></i><h3>Zabbix</h3></div>
+      <div class="skill-item"><i class='bx bx-support'></i><h3>Suporte Técnico</h3></div>
+      <div class="skill-item"><i class='bx bx-server'></i><h3>Infraestrutura</h3></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SOBRE -->
-  <section class="about" id="about">
-    <div class="about-content">
-      <h3>Sobre Mim</h3>
-      <h1>Redes, Suporte e <span>Infraestrutura</span></h1>
-<p>
-Olá! Meu nome é <strong>Matheus Luiz Soares</strong>, sou natural de Natal/RN e atuo na área de
-Tecnologia da Informação com foco em <strong>Desenvolvimento Web, Redes de Computadores e DevOps</strong>.
-Sou estudante de <strong>Redes de Computadores no IFRN</strong> e de
-<strong>Análise e Desenvolvimento de Sistemas</strong>, sempre buscando unir teoria e prática
-em projetos reais.
-</p>
+<!-- ================= CONTATO ================= -->
+<section class="contact" id="contact">
+  <h2>Entre em <span>Contato</span></h2>
 
-<p>
-Tenho experiência com <strong>desenvolvimento back-end em Python</strong>, utilizando frameworks
-como <strong>Django e Flask</strong>, além de conhecimentos sólidos em
-<strong>front-end com HTML, CSS, JavaScript e ReactJS</strong>.
-Também possuo vivência com <strong>Docker, Linux, Git/GitHub e servidores web (Nginx)</strong>,
-o que me permite trabalhar com aplicações completas, do código à infraestrutura.
-</p>
+  <div class="contact-methods">
+    <a href="mailto:matheusluiz15a@gmail.com" class="contact-btn">
+      <i class='bx bx-envelope'></i><span>E-mail</span>
+    </a>
+    <a href="https://wa.me/558488109755" class="contact-btn">
+      <i class='bx bxl-whatsapp'></i><span>WhatsApp</span>
+    </a>
+    <a href="https://www.linkedin.com/in/matheus-luiz-soares-7386b5269/" class="contact-btn">
+      <i class='bx bxl-linkedin'></i><span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/MatheusLuizSoares" class="contact-btn">
+      <i class='bx bxl-github'></i><span>GitHub</span>
+    </a>
+  </div>
+</section>
 
-<p>
-Na área de redes e infraestrutura, já atuei com
-<strong>configuração e manutenção de equipamentos de rede</strong>,
-protocolos como <strong>TCP/IP, DNS, DHCP, IPv6, OSPF e BGP</strong>,
-além de ferramentas de <strong>monitoramento como Zabbix e Grafana</strong>.
-Essa base me dá uma visão ampla de sistemas, desempenho e disponibilidade.
-</p>
+<!-- ================= SOBRE ================= -->
+<section class="about" id="about">
+  <div class="about-content">
+    <h3>Sobre Mim</h3>
+    <h1>Redes, Suporte e <span>Infraestrutura</span></h1>
 
+    <p>
+      Sou estudante de Redes de Computadores no IFRN e de Análise e Desenvolvimento
+      de Sistemas, com foco em infraestrutura, suporte técnico e desenvolvimento web.
+      Possuo interesse em ambientes de produção, monitoramento e operação de serviços.
+    </p>
 
+    <p>
+      Tenho experiência com Python, Flask, Django, Linux, Docker, Git/GitHub,
+      servidores web e redes corporativas. Busco uma oportunidade de estágio
+      onde eu possa aprender, contribuir e evoluir profissionalmente.
+    </p>
+  </div>
+</section>
 
-    </div>
-  </section>
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
